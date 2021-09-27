@@ -1,0 +1,85 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+      <h3 class="d-flex justify-content-center">Search</h3>
+      <div class="content" role="main">
+        <div class="card">
+          <div class="form-group">
+            <label for="search-text">Search Text</label>
+            <input type="email" class="form-control" id="search-text" aria-describedby="search-text"
+              [(ngModel)]="searchText" placeholder="Enter text to search" autofocus>
+          </div>
+          <ul class="list-group list-group-flush">
+            <!-- results of ngFor is passed to appFilter with argument searchText -->
+            <li class="list-group-item" *ngFor="let c of obj | searchPipe: searchText">
+              {{c.musicName}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col-sm-4">
+      <div
+        [ngStyle]="!audio.paused?{'background-color':'azure'}:{'background-color':'black','color':'white'}"
+        class="card d-flex justify-content-center" style="width: 90%;height: 100%;">
+        <img class="card-img-top " src={{song.musicImage}} alt="Card image cap" style="height: 25rem;width: 100%;">
+        <div class="card-body  justify-content-center ">
+          <h5 class="card-title d-flex justify-content-center" style="color: crimson;">{{song.musicName}}</h5>
+          <br>
+          <p class="d-flex justify-content-center">{{song.musicArtist}}</p>
+          <mat-progress-bar class="progressBar" mode="determinate" [value]="value"></mat-progress-bar>
+          <br>
+          <div class=" card-text d-flex justify-content-center ">
+            <mat-icon (click)="prevSong()">skip_previous</mat-icon>
+            <mat-icon class="playPause" (click)="playAudio()">{{playPause}}</mat-icon>
+            <mat-icon (click)="nextSong()">skip_next</mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4">
+      <h3 class="d-flex justify-content-center">My PlayList</h3>
+      <div class="card-body ">
+        <ul *ngFor="let song of obj" class="list-group">
+          <li class="list-group-item list-group-item-light">
+            <img class="img-fluid rounded-start img1" src={{song.musicImage}} alt="Card image cap"
+              style="height: 15%;width: 20%;">
+            {{song.musicName}}
+            <mat-icon class="listPlay" (click)="playFromList(song)">play_circle_filled</mat-icon>
+            <mat-icon (click)="makeFav(song)" [ngClass]="song.fav ? 'fav': 'unfav'">favorite_border</mat-icon>
+            <ng-template [ngIf]="song.fav">
+              <div style="color: red;">{{song.musicName+" is added to fav list"}}</div>
+            </ng-template>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="col-sm-2">
+      <h3 class="d-flex justify-content-center">Favorites</h3>
+      <div class="card-body ">
+        <ul *ngFor="let song of obj"  class="list-group">
+      <ng-template [ngIf]="song.fav">
+          <li class="list-group-item list-group-item-light">
+            <img class="img-fluid rounded-start img1" src={{song.musicImage}} alt="Card image cap"
+              style="height: 15%;width: 20%;">
+            {{song.musicName}}
+            <mat-icon class="listPlay" (click)="playFromList(song)">play_circle_filled</mat-icon>
+            <!-- <mat-icon (click)="makeFav(song)" [ngClass]="song.fav ? 'fav': 'unfav'">favorite_border</mat-icon>
+            <ng-template [ngIf]="song.fav">
+              <div style="color: red;">{{song.musicName}}</div>
+            </ng-template> -->
+          </li>
+      </ng-template>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+</div>

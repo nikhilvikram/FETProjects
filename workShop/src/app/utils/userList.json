@@ -1,0 +1,21 @@
+
+  {
+    "user": [
+      {
+        "name":"Nik",
+        "email": "nik25@gmail.com",
+        "password":"Nik",
+        "role":"user"
+      },{
+        "name":"Man",
+        "email": "man25@gmail.com",
+        "password":"Man",
+        "role":"user"
+      },{
+        "name":"Sai",
+        "email": "sai25@gmail.com",
+        "password":"Sai",
+        "role":"admin"
+      }
+    ]
+  }

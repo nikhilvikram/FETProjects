@@ -1,0 +1,11 @@
+<ul *ngFor="let song of songsList" class="list-group">
+    <li class="list-group-item list-group-item-light">
+        <div class="sname">{{song.musicName}}</div>
+        <img class="img-fluid rounded-start img1" src={{song.musicImage}} alt="Card image cap"
+            style="height: 5%;width: 12%;">
+        <span class="star"*ngFor="let rate of rateArray(song.rating);let i = index;">
+            <mat-icon>star</mat-icon>
+            
+        </span>
+    </li>
+</ul>

@@ -1,0 +1,96 @@
+{
+  "songs": [
+    {
+      "musicId": 2,
+      "musicName": "Summer of 69",
+      "musicFile": "../../../../assets/Summer.mp3",
+      "musicImage": "../../../assets/Summer.jpg",
+      "musicArtist": "Bryan Adams",
+      "fav": false,
+      "rating": 3
+    },
+    {
+      "musicId": 3,
+      "musicName": "Gasolina",
+      "musicFile": "",
+      "musicImage": "../../../assets/TakinOver.jpg",
+      "musicArtist": "",
+      "fav": false,
+      "rating": null
+    },
+    {
+      "musicId": 4,
+      "musicName": "Star Wars",
+      "musicFile": "../../../../assets/Summer.mp3",
+      "musicImage": "../../../assets/StarWars.png",
+      "musicArtist": "Bryan Adams",
+      "fav": false,
+      "rating": 2
+    },
+    {
+      "musicId": 5,
+      "musicName": "We Own It",
+      "musicFile": "",
+      "musicImage": "../../../assets/ownit.jpg",
+      "musicArtist": "Wiz Kahlifa",
+      "fav": false,
+      "rating": null
+    },
+    {
+      "musicId": 6,
+      "musicName": "Summer of 69",
+      "musicFile": "../../../../assets/Summer.mp3",
+      "musicImage": "../../../assets/Summer.jpg",
+      "musicArtist": "Bryan Adams",
+      "fav": false,
+      "rating": 3
+    },
+    {
+      "musicId": 7,
+      "musicName": "Summer of 69",
+      "musicFile": "../../../../assets/Summer.mp3",
+      "musicImage": "../../../assets/Summer.jpg",
+      "musicArtist": "Bryan Adams",
+      "fav": false,
+      "rating": 3
+    },
+    {
+      "musicId": 8,
+      "musicName": "Summer of 69",
+      "musicFile": "../../../../assets/Summer.mp3",
+      "musicImage": "../../../assets/Summer.jpg",
+      "musicArtist": "Bryan Adams",
+      "fav": false,
+      "rating": 3
+    },
+    {
+      "musicId": 10,
+      "musicName": "Alonesdsd",
+      "musicFile": "../../../",
+      "musicImage": "",
+      "musicArtist": "Anxi",
+      "fav": false,
+      "rating": 3
+    }
+  ],
+  "user": [
+    {
+      "name": "Nik",
+      "email": "nik25@gmail.com",
+      "password": "Nik",
+      "role": "user"
+    },
+    {
+      "name": "Man",
+      "email": "man25@gmail.com",
+      "password": "Man",
+      "role": "user"
+    },
+    {
+      "name": "Sai",
+      "email": "sai25@gmail.com",
+      "password": "Sai",
+      "role": "admin"
+    }
+  ]
+}

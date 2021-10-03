@@ -1,0 +1,19 @@
+<div class="search">
+      <h3 class="d-flex justify-content-center head">Search</h3>
+      <div class="content" role="main">
+        <div class="card">
+          <div class="form-group">
+            <input type="email" class="form-control" id="search-text" aria-describedby="search-text"
+              [(ngModel)]="searchText" placeholder="Enter text to search" autofocus>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li  class="list-group-item" *ngFor="let c of songsList | searchPipe: searchText">
+             <!-- <span (click)="playSong(c)"> {{c.musicName}}</span>
+            -->
+            <p class="card-title"><a
+                [routerLink]="'/detailedsong/'+c.musicId+'/'+c.musicName">{{c.musicName}}</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>

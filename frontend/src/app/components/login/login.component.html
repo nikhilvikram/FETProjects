@@ -1,0 +1,48 @@
+
+<div class="bootstrap-wrapper">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <mat-card mt30>
+            <div class="container " >
+                <img src="../../../assets/logo1.png" alt=""/>
+            </div>
+            
+                <h2 class="text-center">Login here!</h2>
+
+            
+                <form  [formGroup]="loginForm" (ngSubmit)="formSubmit()">
+                    
+                    <mat-form-field  class="full-width" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input type="email" 
+                         matInput placeholder="Enter here" formControlName="email">
+                         <!-- <mat-hint *ngIf="loginForm.controls.email.errors">Email is required</mat-hint> -->
+                    </mat-form-field>
+                    <span class="text-danger" *ngIf="loginForm.controls.email.errors && loginForm.controls.email.touched"><br>Invalid Email!</span>
+                    <br>
+                    <mat-form-field  class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input type="password"
+                         matInput placeholder="Enter here" formControlName="password">
+                         <!-- <mat-hint *ngIf="loginForm.controls.password.errors">Password is required</mat-hint> -->
+                    </mat-form-field>
+                    <span class="text-danger" *ngIf="loginForm.controls.password.errors && loginForm.controls.password.touched"><br>Invalid password!</span>
+
+                    
+                    <div class="container">
+                        <!-- <a routerLink="/signup">Don't have an account?</a>&nbsp; &nbsp; -->
+                        <button  type="submit" mat-raised-button color="primary">Login</button>
+                        &nbsp; &nbsp;
+                        <!-- <button mat-raised-button color="accent">Clear</button> -->
+                        <a routerLink="/signup">Don't have an account?</a>&nbsp; &nbsp;
+                        
+                    </div>
+                </form>
+            </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

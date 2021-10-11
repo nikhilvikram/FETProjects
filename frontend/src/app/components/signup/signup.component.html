@@ -1,0 +1,61 @@
+
+<div class="bootstrap-wrapper">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <mat-card mt30>
+            <div class="container " >
+                <img src="../../../assets/logo1.png" alt=""/>
+            </div>
+            
+                <h2 class="text-center">Register here!</h2>
+
+            
+                <form  [formGroup]="regForm" (ngSubmit)="formSubmit()">
+                    <mat-form-field  class="full-width" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input 
+                         matInput
+                         placeholder="Enter here" formControlName="username">
+                         <!-- <mat-hint *ngIf="regForm.controls.username.errors">Username is required</mat-hint> -->
+                         
+                    </mat-form-field><br>
+                    <span class="text-danger" *ngIf="regForm.controls.username.errors && regForm.controls.username.touched"><br>Invalid Name!</span>
+
+                    <mat-form-field  class="full-width" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input type="email" 
+                         matInput placeholder="Enter here" formControlName="email" >
+                          <!-- <mat-error *ngIf="regForm.get('email').errors?.required">
+                              Email is required
+                            </mat-error>  -->
+                    </mat-form-field>
+                    <span class="text-danger" *ngIf="regForm.controls.email.errors && regForm.controls.email.touched"><br>Invalid Email!</span>
+
+                    <mat-form-field  class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input type="password" 
+                         matInput   placeholder="Enter here" formControlName="password">
+                         <!-- <button mat-icon-button matsuffix (click)="hide = !hide"
+                         [attr.aria-label]="'Hide Password'" [attr.aira-pressed]="hide">
+                        <mat-icon>{{hide? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button> -->
+                         <!-- <mat-hint *ngIf="regForm.controls.password.errors">Password is required</mat-hint> -->
+                    </mat-form-field>
+                    <span class="text-danger" *ngIf="regForm.controls.password.errors && regForm.controls.password.touched"><br>Invalid password!</span>
+
+                    <div class="container">
+                        
+                        <button [disabled]="regForm.invalid" type="submit" mat-raised-button color="primary">Register</button>
+                        &nbsp; &nbsp;
+                        <!-- <button mat-raised-button color="accent">Clear</button> -->
+                        <a routerLink="/login">Already have an account?</a>&nbsp; &nbsp;
+                    </div>
+                </form>
+            </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

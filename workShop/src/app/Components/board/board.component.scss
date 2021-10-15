@@ -1,0 +1,16 @@
+main{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 0px;
+}
+app-square{
+    border: 1px grey solid;
+    height: 200px;
+}
+h1{
+    background-color: black;
+    color: gainsboro;
+    border: 1px solid black;
+    margin: 0.1rem;
+     text-align: center;
+    }

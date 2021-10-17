@@ -118,7 +118,13 @@ header .container .col-md-7 p {
 .section-1 {
   padding: 20vmin 0vmin;
 }
-
+.section-1 h1 {
+  color: #dd2476; font-size: 8.5vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+  line-height:100%;
+  font-family: Copperplate, "Copperplate"
+}
 .section-1 .row .col-md-6 .pray img {
   opacity: 0.8;
   width: 80%;
@@ -146,6 +152,7 @@ header .container .col-md-7 p {
   font-weight: bold;
   padding: 0.4em 0;
   font-size: 2em;
+ 
 }
 
 .section-1 .row .col-md-6 .panel p {

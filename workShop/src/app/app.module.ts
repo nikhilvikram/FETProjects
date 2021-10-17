@@ -33,6 +33,11 @@ import { BoardComponent } from './Components/board/board.component';
 import { TetrisBoardComponent } from './Components/tetris-board/tetris-board.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NgxPopper } from 'angular-popper';
+import { MatchingGameComponent } from './Components/Games/MatchGame/matching-game/matching-game.component';
+import { GameOneComponent } from './Components/Games/MatchGame/game-one/game-one.component';
+import { GameTwoComponent } from './Components/Games/MatchGame/game-two/game-two.component';
+import { ShufflePipe } from './utils/MatchingGame/shuffle.pipe';
+import { GameSecondComponent } from './Components/Games/MatchGame/game-second/game-second.component';
 
 
 @NgModule({
@@ -56,7 +61,12 @@ import { NgxPopper } from 'angular-popper';
     SquareComponent,
     BoardComponent,
     TetrisBoardComponent,
-    HomePageComponent
+    HomePageComponent,
+    MatchingGameComponent,
+    GameOneComponent,
+    GameTwoComponent,
+    ShufflePipe,
+    GameSecondComponent
   ],
   imports: [
     BrowserModule,

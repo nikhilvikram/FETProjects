@@ -1,27 +1,4 @@
-# WorkShop
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+sent the guard immediately , and shifted his focus om the bar owner to provide intel on this riots , in turn the owner replied this are one of the most vengeanceful people he has ever seen in his life , and added they were quite mischief in their action of battle , he explained that few months back they had encountered a similar case in nearby village , same situation as today just intead of the troops a group of king's soldier were present  they ignited their wagons and meteculously attacked the army with fire bombs , totally unexpectedly .
+Hearing this captain was uncolably peeking from as many angle as possible to guage a route in order to alert the troops .
+The guard returned with a bad news , he expressed how riots members are spreaded in the whole area , but there is chance of bypassing the horse-hoisted riots the way some coustomers are excavating through back garden.
+Captaine sat on chair and was calculating the situation and the he rose up jerkingly giving orders for me to stay with one guard and he will alert the troops , the bar owner and me hesiteted to allow this plan but he was sure of his decision , we hugged and shaked hand and prayed for best outcome . and the captain tookoff with one of the guard   . 
